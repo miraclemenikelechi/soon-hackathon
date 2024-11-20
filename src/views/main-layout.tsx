@@ -2,6 +2,7 @@
 
 import { useTheme } from "next-themes";
 import Header from "@/components/header";
+import Footer from "@/components/footer";
 import { ReactNode, useEffect } from "react";
 
 export default function Component({ children }: { children: ReactNode }) {
@@ -15,10 +16,10 @@ export default function Component({ children }: { children: ReactNode }) {
 	);
 
 	return (
-		<section className={`border-4 border-red-600 min-h-screen`}>
+		<section className={`min-h-screen relative`}>
 			<Header />
 			{children}
-			<footer>footer</footer>
+			<Footer />
 		</section>
 	);
 }

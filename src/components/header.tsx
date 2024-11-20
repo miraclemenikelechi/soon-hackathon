@@ -25,13 +25,8 @@ const navigationLinks: {
 
 export default function Component() {
 	return (
-		<header className={`w-full flex items-center justify-center px-[2.5rem] py-4`}>
-			<div
-				className={cn(
-					`h-[2.5rem] flex items-center justify-between`,
-					`desktop-screen-width`,
-				)}
-			>
+		<header className={`w-full flex items-center justify-center px-[2rem] py-4`}>
+			<div className={`h-[2.5rem] flex items-center justify-between max-w-[91.75rem] w-full`}>
 				<Link href="/">logo</Link>
 
 				<NavigationMenu>
