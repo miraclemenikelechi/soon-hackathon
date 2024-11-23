@@ -18,7 +18,11 @@ export default function Component({ children }: { children: ReactNode }) {
 	return (
 		<section className={`min-h-screen relative`}>
 			<Header />
-			{children}
+			<main
+				className={`max-w-[80rem] border border-red-500 mx-auto pb-[45.5rem] pt-[2.25rem]`}
+			>
+				{children}
+			</main>
 			<Footer />
 		</section>
 	);
